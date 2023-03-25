@@ -23,7 +23,11 @@
     <p>The girls are in their final year at secondary school and all working on personal projects that interest them.</p>
     <ul>
       <p><span>Student profiles</span></p>
-      <img src="ruòxī.jpg" />
+      <div>
+        <img src="ruòxī.jpg" alt="Ruòxī" />
+        <img src="robotic-arm.jpg" alt="Robotic arm" />
+        <img src="electric-motor.jpg" alt="Elevtroc motor" />
+      </div>
       <p>Ruòxī</p>
       <p>Ruòxī is a boisterous syudent who likes to get stuck in with pratical work. She's worked on:</p>
       <li>
@@ -31,7 +35,7 @@
         <p>Robotic arms</p>
         <p>Sports trainig systems</p>
       </li>
-      <img src="priya.jpg" />
+      <img src="priya.jpg" alt="Priya" />
       <p>Priya</p>
       <p>Priya loves working with people and visual systems. She's worked on:</p>
       <li>
@@ -39,7 +43,7 @@
         <p>Self-driving systems</p>
         <p>Animal classification apps</p>
       </li>
-      <img src="aniyah.jpg" />
+      <img src="aniyah.jpg" alt="Aniyah" />
       <p>Aniyah</p>
       <p>Aniyah is a mathematician through-and-through. She's worked on:</p>
       <li>
@@ -47,7 +51,7 @@
         <p>Prime number factorisation</p>
         <p>Computer graphics</p>
       </li>
-      <img src="lucy.jpg" />
+      <img src="lucy.jpg" alt="Lucy" />
       <p>Lucy</p>
       <p>Lucy loves data and getting everything organised. She's worked on:</p>
       <li>
@@ -55,7 +59,7 @@
         <p>Student information systems</p>
         <p>Long-term extrasurricular trends</p>
       </li>
-      <img src="kaiara.jpg" />
+      <img src="kaiara.jpg" alt="Kaiara" />
       <p>Kaiara</p>
       <p>Kaiara is a driven entrepreneur and drives app development forward. She's worked on:</p>
       <li>
@@ -65,11 +69,18 @@
       </li>
     </ul>
     <p><span>Our School</span></p>
+    <div>
+      <img src="school-inside.jpg" alt="Inside of school" />
+      <img src="school-outside.jpg" alt="Outside of school" />
+    </div>
     <p>Our school aims to prepare students for a future in an unknown job market, where people skills are as important as tech skills. We give our girls access to the resources they need to explore their world and develop into the people they want to be.</p>
+    <img src="students-working.jpg" />
     <p>Personal drive is celebrated here, and we like to give our students the oppotunity to pursue any area that interests them.</p>
   </main>
 </body>
-<footer></footer>
+<footer>
+  <p>&copy; Ray Maeda Craighead 2023</p>
+</footer>
 
 <style>
   body {
@@ -78,7 +89,8 @@
       " h   h   h " auto
       " n   n   n " auto
       " m   m   m " auto
-      " f   f   f " auto;
+      " f   f   f " auto
+      / 1fr 5fr 1fr;
   }
   header {
     grid-area: h;
@@ -93,22 +105,35 @@
     grid-area: f;
   }
   * {
+    background-color: #f4eea9;
     text-align: center;
   }
   h1 {
     font-family: "Josefin Slab", serif;
     background-color: #cf8e80;
+    font-size: 70px;
+    margin-top: 2%;
+    padding-top: 3%;
   }
   h2 {
     font-family: "Cookie", cursive;
+    font-size: 40px;
   }
   span {
-    color: olivedrab;
-  }
-  ul {
-    background-color: #f4eea9;
+    color: #6a994e;
+    font-size: 20px;
   }
   p {
     font-family: "Alegreya Sans", sans-serif;
+  }
+  img {
+    width: 7rem;
+  }
+  div {
+    display: flex;
+    justify-content: space-around;
+  }
+  footer {
+    background-color: #fcb5b5;
   }
 </style>
