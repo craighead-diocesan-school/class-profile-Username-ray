@@ -14,9 +14,9 @@
     <h1>Our class</h1>
   </header>
   <nav>
-    <a href="index.html"></a>
-    <a href=""></a>
-    <!-- jump to the amother page -->
+    <a href="index.html" class="btn btn--circle btn--circle-c btn--shadow"><i class="fas fa-arrow-right"></i></a>
+    <a href="" class="btn btn--circle btn--circle-c btn--shadow"><i class="fas fa-arrow-right"></i></a>
+    <!-- jump to the another page -->
   </nav>
   <main>
     <h2>Our class of high-performing digital technology students likes to get stock into any project that takes their fancy.</h2>
@@ -26,13 +26,13 @@
       <div>
         <img src="robotic-arm.jpg" alt="Robotic arm" />
         <img src="ruòxī.jpg" alt="Ruòxī" />
-        <img src="electric-motor.jpg" alt="Elevtroc motor" />
+        <img src="electric-motor.jpg" alt="Electric motor" />
       </div>
       <p><span class="name">Ruòxī</span></p>
-      <p>Ruòxī is a boisterous syudent who likes to get stuck in with pratical work. She's worked on:</p>
+      <p>Ruòxī is a boisterous student who likes to get stuck in with practical work. She's worked on:</p>
       <li>Electric cars</li>
       <li>Robotic arms</li>
-      <li>Sports trainig systems</li>
+      <li>Sports training systems</li>
       <img src="priya.jpg" alt="Priya" />
       <p><span class="name">Priya</span></p>
       <p>Priya loves working with people and visual systems. She's worked on:</p>
@@ -54,7 +54,7 @@
       <img src="kaiara.jpg" alt="Kaiara" />
       <p><span class="name">Kaiara</span></p>
       <p>Kaiara is a driven entrepreneur and drives app development forward. She's worked on:</p>
-      <li>Ecimmerce systems</li>
+      <li>Ecommerce systems</li>
       <li>Payment handing software</li>
       <li>Stock management apps</li>
     </ul>
@@ -65,7 +65,7 @@
     </div>
     <p>Our school aims to prepare students for a future in an unknown job market, where people skills are as important as tech skills. We give our girls access to the resources they need to explore their world and develop into the people they want to be.</p>
     <img src="students-working.jpg" />
-    <p>Personal drive is celebrated here, and we like to give our students the oppotunity to pursue any area that interests them.</p>
+    <p>Personal drive is celebrated here, and we like to give our students the opportunity to pursue any area that interests them.</p>
   </main>
 </body>
 <footer>
@@ -77,8 +77,8 @@
     display: grid;
     grid:
       " h   h   h " auto
-      " n   n   n " auto
-      " m   m   m " auto
+      " m   m   n " auto
+      " m   m   n " auto
       " f   f   f " auto
       / 1fr 5fr 1fr;
   }
@@ -95,16 +95,33 @@
     grid-area: f;
   }
   * {
-    background-color: #fcb5b5;
+    background-color: #b0c0b0;
     text-align: center;
   }
   h1 {
     font-family: "Josefin Slab", serif;
-    background-color: #f4eea9;
+    background-color: #c1edcc;
     font-size: 70px;
     margin-top: 2%;
     padding-top: 3%;
     text-transform: uppercase;
+  }
+  a.btn--circle {
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  }
+  a.btn--circle i {
+    font-size: 150%;
+    line-height: 60px;
+    transition: all 0.3s;
+    letter-spacing: 0;
+  }
+  a.btn--circle :hover i {
+    line-height: 55px;
   }
   h2 {
     font-family: "Cookie", cursive;
@@ -136,6 +153,6 @@
     justify-content: space-around;
   }
   footer {
-    background-color: #cf8e80;
+    background-color: #f2bac9;
   }
 </style>
