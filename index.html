@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-  <meta carset="UTF-8" />
+  <meta charset="UTF-8" />
   <title></title>
   <link rel="icon" href="" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,8 +16,9 @@
     <h1>Our class</h1>
   </header>
   <nav>
-    <a href="index.html" class="btn btn--circle btn--circle-c btn--shadow"><i class="fas fa-arrow-right"></i></a>
-    <a href="" class="btn btn--circle btn--circle-c btn--shadow"><i class="fas fa-arrow-right"></i></a>
+    <div class="button">
+      <a href="ourschool.html"></a>
+    </div>
     <!-- jump to the another page -->
   </nav>
   <main>
@@ -60,14 +61,6 @@
       <li>Payment handing software</li>
       <li>Stock management apps</li>
     </ul>
-    <p><span class="title">Our School</span></p>
-    <div>
-      <img src="school-inside.jpg" alt="Inside of school" />
-      <img src="school-outside.jpg" alt="Outside of school" />
-    </div>
-    <p>Our school aims to prepare students for a future in an unknown job market, where people skills are as important as tech skills. We give our girls access to the resources they need to explore their world and develop into the people they want to be.</p>
-    <img src="students-working.jpg" />
-    <p>Personal drive is celebrated here, and we like to give our students the opportunity to pursue any area that interests them.</p>
   </main>
 </body>
 <footer>
@@ -107,22 +100,39 @@
     margin-top: 2%;
     padding-top: 3%;
   }
-  a.btn--circle {
-    width: 60px;
-    height: 60px;
-    padding: 0;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  .button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    background-color: #cccccc;
+    border: 3px solid #aaaaaa;
+    border-radius: 50vh;
+    transition: 0.3s;
   }
-  a.btn--circle i {
-    font-size: 150%;
-    line-height: 60px;
-    transition: all 0.3s;
-    letter-spacing: 0;
+  .button a::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: 3px solid #333;
+    border-left: 3px solid #333;
+    transform: rotate(135deg);
+    transition: 0.3s;
   }
-  a.btn--circle :hover i {
-    line-height: 55px;
+  .button span {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+  .button a:hover {
+    background-color: #333333;
+  }
+  .button a:hover::after {
+    border-top: 3px solid #f2f2f2;
+    border-left: 3px solid #f2f2f2;
+    transform: translateY(-5px) rotate(135deg);
   }
   h2 {
     font-family: "Farsan", cursive;
