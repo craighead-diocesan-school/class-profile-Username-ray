@@ -16,7 +16,6 @@
   <nav>
     <div class="button">
       <a href="ourschool.html"></a>
-      <!-- jump to the another page -->
     </div>
   </nav>
   <main>
@@ -24,7 +23,7 @@
     <p>The girls are in their final year at secondary school and all working on personal projects that interest them.</p>
     <ul>
       <p><span class="title">Student profiles</span></p>
-      <div>
+      <div class="image1">
         <img src="robotic-arm.jpg" alt="Robotic arm" />
         <img src="ruòxī.jpg" alt="Ruòxī" />
         <img src="electric-motor.jpg" alt="Electric motor" />
@@ -34,39 +33,39 @@
       <li>Electric cars</li>
       <li>Robotic arms</li>
       <li>Sports training systems</li>
-      <img src="priya.jpg" alt="Priya" />
+      <div class="image2">
+        <img src="priya.jpg" alt="Priya" />
+      </div>
       <p><span class="name">Priya</span></p>
       <p>Priya loves working with people and visual systems. She's worked on:</p>
       <li>Facial recognition software</li>
       <li>Self-driving systems</li>
       <li>Animal classification apps</li>
-      <img src="aniyah.jpg" alt="Aniyah" />
+      <div class="image3">
+        <img src="aniyah.jpg" alt="Aniyah" />
+      </div>
       <p><span class="name">Aniyah</span></p>
       <p>Aniyah is a mathematician through-and-through. She's worked on:</p>
       <li>Algorithm classification</li>
       <li>Prime number factorisation</li>
       <li>Computer graphics</li>
-      <img src="lucy.jpg" alt="Lucy" />
+      <div class="image4">
+        <img src="lucy.jpg" alt="Lucy" />
+      </div>
       <p><span class="name">Lucy</span></p>
       <p>Lucy loves data and getting everything organised. She's worked on:</p>
       <li>Course choice prediction systems</li>
       <li>Student information systems</li>
       <li>Long-term extrasurricular trends</li>
-      <img src="kaiara.jpg" alt="Kaiara" />
+      <div class="image5">
+        <img src="kaiara.jpg" alt="Kaiara" />
+      </div>
       <p><span class="name">Kaiara</span></p>
       <p>Kaiara is a driven entrepreneur and drives app development forward. She's worked on:</p>
       <li>Ecommerce systems</li>
       <li>Payment handing software</li>
       <li>Stock management apps</li>
     </ul>
-    <p><span class="title">Our School</span></p>
-    <div>
-      <img src="school-inside.jpg" alt="Inside of school" />
-      <img src="school-outside.jpg" alt="Outside of school" />
-    </div>
-    <p>Our school aims to prepare students for a future in an unknown job market, where people skills are as important as tech skills. We give our girls access to the resources they need to explore their world and develop into the people they want to be.</p>
-    <img src="students-working.jpg" />
-    <p>Personal drive is celebrated here, and we like to give our students the opportunity to pursue any area that interests them.</p>
   </main>
 </body>
 <footer>
@@ -165,9 +164,55 @@
   img {
     width: 7rem;
   }
-  div {
+  .image1 {
     display: flex;
     justify-content: space-around;
+    animation-name: fadeUpAnime;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .image2 {
+    display: flex;
+    justify-content: space-around;
+    animation-name: fadeUpAnime;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .image3 {
+    display: flex;
+    justify-content: space-around;
+    animation-name: fadeUpAnime;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .image4 {
+    display: flex;
+    justify-content: space-around;
+    animation-name: fadeUpAnime;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  .image5 {
+    display: flex;
+    justify-content: space-around;
+    animation-name: fadeUpAnime;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  @keyframes fadeUpAnime {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    to {
+      opacity: 5;
+      transform: translateY(0px);
+    }
   }
   footer {
     background-color: #f2bac9;
