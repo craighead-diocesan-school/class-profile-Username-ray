@@ -6,7 +6,7 @@
   <link rel="icon" href="favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Cookie&family=Josefin+Slab:wght@300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Farsan&family=Pacifico&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -14,9 +14,10 @@
     <h1>Our class</h1>
   </header>
   <nav>
-    <a href="index.html" class="btn btn--circle btn--circle-c btn--shadow"><i class="fas fa-arrow-right"></i></a>
-    <a href="" class="btn btn--circle btn--circle-c btn--shadow"><i class="fas fa-arrow-right"></i></a>
-    <!-- jump to the another page -->
+    <div class="button">
+      <a href="ourschool.html"></a>
+      <!-- jump to the another page -->
+    </div>
   </nav>
   <main>
     <h2>Our class of high-performing digital technology students likes to get stock into any project that takes their fancy.</h2>
@@ -41,10 +42,10 @@
       <li>Facial recognition software</li>
       <li>Self-driving systems</li>
       <li>Animal classification apps</li>
-      <p><span class="name">Aniyah</span></p>
       <div class="image3">
         <img src="aniyah.jpg" alt="Aniyah" />
       </div>
+      <p><span class="name">Aniyah</span></p>
       <p>Aniyah is a mathematician through-and-through. She's worked on:</p>
       <li>Algorithm classification</li>
       <li>Prime number factorisation</li>
@@ -77,8 +78,8 @@
     display: grid;
     grid:
       " h   h   h " auto
-      " n   n   n " auto
-      " m   m   m " auto
+      " m   m   n " auto
+      " m   m   n " auto
       " f   f   f " auto
       / 1fr 5fr 1fr;
   }
@@ -99,32 +100,49 @@
     text-align: center;
   }
   h1 {
-    font-family: "Josefin Slab", serif;
+    font-family: "Pacifico", cursive;
     background-color: #c1edcc;
     font-size: 70px;
     margin-top: 2%;
     padding-top: 3%;
     text-transform: uppercase;
   }
-  a.btn--circle {
-    width: 60px;
-    height: 60px;
-    padding: 0;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  .button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    background-color: #cccccc;
+    border: 3px solid #aaaaaa;
+    border-radius: 50vh;
+    transition: 0.3s;
   }
-  a.btn--circle i {
-    font-size: 150%;
-    line-height: 60px;
-    transition: all 0.3s;
-    letter-spacing: 0;
+  .button a::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: 3px solid #333;
+    border-left: 3px solid #333;
+    transform: rotate(135deg);
+    transition: 0.3s;
   }
-  a.btn--circle :hover i {
-    line-height: 55px;
+  .button span {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+  .button a:hover {
+    background-color: #333333;
+  }
+  .button a:hover::after {
+    border-top: 3px solid #f2f2f2;
+    border-left: 3px solid #f2f2f2;
+    transform: translateY(-5px) rotate(135deg);
   }
   h2 {
-    font-family: "Cookie", cursive;
+    font-family: "Farsan", cursive;
     font-size: 40px;
   }
   .title {
